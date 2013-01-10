@@ -22,11 +22,11 @@ We can pass data in two ways (though they are similar).
 
 1. If you just want to push some raw text, we would set up an array as follows:
 ```
-$data =  array(
-   'JasonBourne',
-   'dwebb',
-   // ... etc.
-);
+   $data =  array(
+      'JasonBourne',
+      'dwebb',
+      // ... etc.
+   );
 ```
 
 2. Or, if we want to populate further elements within the chosen `bind`ed class, we can pass a more complex array.
