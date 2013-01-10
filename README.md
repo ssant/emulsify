@@ -6,7 +6,7 @@ Emulsify allows you to manipulate and inject data into HTML; without mixing a te
 
 This keeps the HTML (design) separate from the logic (PHP).
 
-Lean by Example
+Learn by Example
 ---
 `template.htm`
 ```
@@ -46,7 +46,7 @@ $template->select('user-list')->bind('user', $data);
 echo $template->render();
 ```
 
-The expecteed output should be:
+The expected output should be:
 ```
 <!DOCTYPE html>
 <html>
