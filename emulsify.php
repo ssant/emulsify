@@ -118,12 +118,12 @@ class Emulsify
    {
       if (is_string($emulsify))
       {
-         $templet = new Emulsify($emulsify);
+         $emulsify = new Emulsify($emulsify);
       }
 
       if (!is_object($emulsify) || get_class($emulsify) != __CLASS__)
       {
-         trigger_error('Templet: argument passed to Templet::attach is invalid', E_USER_ERROR);
+         trigger_error('Emulsify: argument passed to Emulsify::attach is invalid', E_USER_ERROR);
       }
 
       if (!$this->selected)
