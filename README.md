@@ -21,29 +21,29 @@ Now we can bind data to a node within this block.
 We can pass data in two ways (though they are similar).
 
 1. If you just want to push some raw text, we would set up an array as follows:
-```
+   ```
    $data =  array(
       'JasonBourne',
       'dwebb',
       // ... etc.
    );
-```
+   ```
 
 2. Or, if we want to populate further elements within the chosen `bind`ed class, we can pass a more complex array.
-```
-$data = array(
-   array(
-      'username' => 'Jason',
-      'username:href' => 'http://example.com/Jason',
-      'twitter:href' => 'https://twitter.example.org/jasonbourne',
-   ),
-   array(
-      'username' => 'Dave',
-      'username:href' => 'mailto:david@webb.dom',
-      'twitter:href' => 'https://twitter.example.org/dwebb',
-   ),
-);
-```
+   ```
+   $data = array(
+      array(
+         'username' => 'Jason',
+         'username:href' => 'http://example.com/Jason',
+         'twitter:href' => 'https://twitter.example.org/jasonbourne',
+      ),
+      array(
+         'username' => 'Dave',
+         'username:href' => 'mailto:david@webb.dom',
+         'twitter:href' => 'https://twitter.example.org/dwebb',
+      ),
+   );
+   ```
 
 We can then call `bind()` with the class and data array.
 ```
